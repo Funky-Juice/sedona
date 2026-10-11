@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       style: {
         options: {
           processors: [
-            require("autoprefixer")({browsers: [
+            require("autoprefixer")({overrideBrowserslist: [
               "last 2 versions"
             ]}),
             require("css-mqpacker")({
